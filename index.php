@@ -1,4 +1,4 @@
-<?php 
+<?php //Lenguaje php
 session_start(); 
 include_once "conexion2.php"; 
 if (ereg("[^A-Za-z0-9]+",$_POST['user'])) {
