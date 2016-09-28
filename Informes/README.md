@@ -12,3 +12,5 @@ Bien la explicación del os diagramas de CU
 Excelente matriz
 <br>
 Nota: 6,6
+<br>
+Corregir para informe 2
