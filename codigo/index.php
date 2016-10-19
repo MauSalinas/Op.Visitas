@@ -117,7 +117,7 @@ echo "<center><div><a href=\"verimagen.php\" target=\"_self\"> <input type=\"but
 echo "<br>";
 echo "<center><div><a href=\"contrasena.php\" target=\"_self\"> <input type=\"button\" name=\"boton\" value=\"Cambiar contraseña\" /> </a></div></center>";
 //Conexion con la base
-mysql_connect("opvisitas.crystallagoons.com","web_opvisitas","op.43$.98-cl");
+mysql_connect("","","");
 
 //selección de la base de datos con la que vamos a trabajar 
 mysql_select_db("opvisitas"); 
