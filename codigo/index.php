@@ -1,6 +1,6 @@
 <?php //Lenguaje php
 session_start(); 
-include_once "conexion2.php"; 
+include_once "conectar.php"; 
 if (ereg("[^A-Za-z0-9]+",$_POST['user'])) {
      header("location:index.php");
     ;
@@ -101,7 +101,6 @@ form.login div input[type="submit"] {
 <?php 
 } else 
     {
-
     echo '<a href="logout.php">Logout</a>'; 
 echo "<html>\n"; 
 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n"; 
@@ -117,14 +116,12 @@ echo "<center><div><a href=\"verimagen.php\" target=\"_self\"> <input type=\"but
 echo "<br>";
 echo "<center><div><a href=\"contrasena.php\" target=\"_self\"> <input type=\"button\" name=\"boton\" value=\"Cambiar contraseña\" /> </a></div></center>";
 //Conexion con la base
-mysql_connect("opvisitas.crystallagoons.com","web_opvisitas","op.43$.98-cl");
-
+mysql_connect("sql200.260mb.net","n260m_19043332","serena");
 //selección de la base de datos con la que vamos a trabajar 
-mysql_select_db("opvisitas"); 
+mysql_select_db("n260m_19043332_1"); 
 //Creamos la sentencia SQL y la ejecutamos
 $sSQL="update usuarios Set password='$contrasena' where usuarios='$result->idusuarios'";
 mysql_query($sSQL);
-
 } 
 }
 ?>
